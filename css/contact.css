@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@700;800;900&display=swap');
+body{
+    overflow: hidden;
+}
+label{
+    font-size: 2.5rem;
+}
+.bar{
+    padding: 10px;
+    border-width: 0;
+    border-bottom-width: 1px;
+    background-color: transparent;
+    border-color: white;
+    color: white;
+    width: 400px;
+}
+#button{
+    background-color: transparent;
+    border-color: white;
+    border-width: 1px;
+    color: white;
+    padding: 10px;
+    width: 400px;
+    font-size: 1.5rem;
+}
+#form{
+    position: absolute;
+    margin-top: 5vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.info{
+    margin-bottom: 5vh;
+}
+.info:nth-child(3){
+    margin-bottom: 2vh;
+}
+.info-type{
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    margin-bottom: 5vh;
+}
+#info-who{
+    font-size: 2.5rem;
+}
+input{
+    margin-right: 10px;
+}
+#textbox{
+    background-color: transparent;
+    color: white;
+    width: 400px;
+    font-size: 1.3rem;
+    border-color: white;
+}
+.submit{
+    margin-top: 2vh;
+    margin-bottom: 3vh;
+}
+#button:hover{
+    color: black;
+    background-color: white;
+    transition:all 1s ease;
+}
+#back-logo{
+    color: rgb(255,255,255,0.1);
+    font-size: 28rem;
+    font-weight: 900;
+    font-family: 'Kanit', sans-serif;
+    position: relative;
+    text-align: center;
+    transform: translateY(40vh);
+}

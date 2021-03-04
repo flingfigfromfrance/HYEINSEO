@@ -1,0 +1,51 @@
+.new{
+    background-image: url(../img/New-arrivals.png);
+    height: 40vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 7vh;
+    margin-bottom: 7vh;
+    color: #ffffff;
+}
+.new::before{content:"";display:block;height:40vh;background-color:rgba(255, 255, 255, 0.3);transition:opacity 200ms ease-in-out}
+.new > span {
+    position: absolute;left:50%;top:35%;transform: translateX(-50%) translateY(-50%);
+    transition:all 1s ease;
+    color:#000000;text-decoration:none;font-size: 5.5rem;font-weight: 700;
+    z-index:140;text-align:center;line-height:50px;
+}
+.row{
+    display: flex;
+    display:-webkit-flex;
+	display:-ms-flexbox;
+	flex-wrap:wrap;
+	justify-content:center;
+}
+.item{
+    padding-right:20px;
+	padding-left:20px;
+    padding-bottom:50px;
+    position: relative;
+}
+.item::before{
+    content:"";
+    display:block;
+    background-color:rgba(255, 255, 255, 0.4);
+    opacity:0;transition:opacity 200ms ease-in-out;
+    width: 450px;height: 563px;
+    position: absolute;
+}
+.item:hover::before{opacity:1}
+.item > span{
+    position: absolute;left:50%;top:50%;transform: translateX(-50%) translateY(-50%);
+    transition:all 1s ease;
+    color:white;text-decoration:none;font-size: 4.5rem;font-weight: 700;
+    opacity:0;
+    z-index:140;text-align:center;line-height:50px;
+
+}
+.item:hover > span{
+    opacity:1;z-index:1; color: black; 
+}

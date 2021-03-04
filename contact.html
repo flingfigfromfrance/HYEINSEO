@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HYEINSEO</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/contact.css">
+</head>
+<body>
+    <h1 class="blind">Menu</h1>
+    <b id="btn-menu" class="btn-menu"><span></span></b>
+    <div id="side-menu" class="side-menu">
+        <ul>
+            <li><a href="about.html"><span>ABOUT</span></a></li>
+            <li><a href="collection.html"><span>COLLECTIONS</span></a></li>
+            <li><a href="shop.html"><span>SHOP</span></a></li>
+            <li><a href="contact.html"><span>CONTACT</span></a></li>
+        </ul>
+        <b id="btn-close" class="btn-close"><span></span></b>
+    </div>
+    <div id="home-logo">
+        <a href="index.html"><img src="./img/logo.png" width="260px"/></a>
+    </div>
+ 
+    <div id="back-logo">
+        HYEINSEO
+    </div>
+    <section id="form">
+        <div class="info">
+            <label for="name" >FULL NAME</label><br>
+            <input type="text" class="bar">
+        </div>
+        <div class="info">
+            <label for="mail">E-MAIL ADDRESS</label><br>
+            <input type="text" class="bar">
+        </div>
+        <div class="info">
+            <label for="contact" id="info-who">Who do you want to contact?</label>
+        </div>    
+        <div class="info-type">
+            <input type="radio" name="who" value="General Inquiries" >General Inquiries<br>
+            <input type="radio" name="who" value="Press & Editorials">Press & Editorials<br>
+            <input type="radio" name="who" value="Online Purchases And Wholesales">Online Purchases And Wholesales<br>
+        </div>
+            <textarea name="q&a" cols="50" rows="10" id="textbox" placeholder="Please write your inquiry."></textarea>
+        <div class="submit">
+            <input type="submit" value="SUBMIT" id="button" onclick="alert('문의가 접수되었습니다.');">
+        </div>    
+
+    </section>
+
+    <div id="cursor-bg">&nbsp;</div>
+    <div id="progress"><span>&nbsp;</span></div>
+    
+    <script type="text/javascript" src="./vendor/gsap/gsap.min.js"></script>
+    <script type="text/javascript" src="./js/common.js"></script>
+</body>
+</html>
